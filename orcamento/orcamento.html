@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro</title>
+    <link rel="stylesheet" href="orcamento.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-j8Lp/djylBMy2gH+8zBrXlX7NwTvI5H/rOvM4PMTGU3A9dbw/14FbOvI9v3GyAb6zW6gtbGldq1mc2cZxPT4Yw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-REDACTED" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="orcamento.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="entry">
+                <span>Entradas: R$</span>
+                <span id="entradas">0.00</span>
+            </div>
+            <div class="exit">
+                <span>Saídas: R$</span>
+                <span id="saidas">0.00</span>
+            </div>
+            <div class="total">
+                <span>Total: R$</span>
+                <span id="total">0.00</span>
+            </div>
+        </div>
+        <form id="orcamento-form" class="form"> <!-- Adicionado o id "orcamento-form" e a classe "form" -->
+            <input type="text" id="descricao" placeholder="Descrição">
+            <input type="number" id="valor" placeholder="Valor">
+            <select id="tipo">
+                <option value="">Tipo</option>
+                <option value="entrada">Entrada</option>
+                <option value="saida">Saída</option>
+            </select>
+            <button type="submit" id="incluir">Incluir</button>
+            <!-- Adicionado type="submit" para enviar o formulário -->
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                    <th>Tipo</th>
+                    <th>Data</th>
+                    <th>Ações</th>
+
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

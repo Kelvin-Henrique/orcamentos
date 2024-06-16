@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="cadastro.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="back-arrow">
+            <a href="/home/home.html"><img src="/assets/images/back.png" alt="Voltar" (click)="voltar()"></a>
+        </div>
+        <form id="register-form" class="register-form">
+            <h2>Crie sua conta</h2>
+            <p>Preencha com seus dados.</p>
+            <div class="input-group">
+                <input type="text" id="nome-completo" name="nome-completo" placeholder="Nome Completo" required>
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="Senha" required>
+                <i class="fas fa-lock"></i>
+            </div>
+            <div class="button-group">
+                <button type="submit" class="btn">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

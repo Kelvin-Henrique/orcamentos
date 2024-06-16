@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <form class="login-form">
+            <h2>Faça login com sua conta.</h2>
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="button-group">
+                <button type="submit" class="btn">Entrar</button>
+                <button type="button" class="btn" onclick="redirectToCadastro()">Cadastre-se</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function redirectToCadastro() {
+            window.location.href = "/cadastro/cadastro.html";
+        }
+    </script>
+</body>
+
+</html>
